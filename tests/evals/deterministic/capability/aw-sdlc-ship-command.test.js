@@ -80,7 +80,7 @@ function run() {
   })) passed++; else failed++;
 
   if (test('ship uses the launch checklist and rollback readiness as hard expectations', () => {
-    assert.ok(skillContent.includes('references/ship-launch-checklist.md'));
+    assert.ok(skillContent.includes('../../references/ship-launch-checklist.md'));
     assert.ok(commandContent.includes('rollback plan or blocker'));
     assert.ok(skillContent.includes('rollback readiness is documented'));
   })) passed++; else failed++;
